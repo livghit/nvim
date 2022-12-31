@@ -1,5 +1,5 @@
 
-
+-- Tokionighit colorscheme
 require("tokyonight").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
@@ -32,4 +32,9 @@ require("tokyonight").setup({
   ---@param colors ColorScheme
   on_highlights = function(highlights, colors) end,
 })
+
+-- Noctic colorscheme
+
+
+--setting the colorscheme
 vim.cmd[[colorscheme tokyonight]]
