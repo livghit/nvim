@@ -10,6 +10,10 @@ return require('packer').startup(function(use)
   use 'ThePrimeagen/harpoon'
   --Colorschemes
   use 'folke/tokyonight.nvim'
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
 
   --Treesitter and autopairs
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })

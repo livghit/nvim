@@ -1,9 +1,8 @@
-
 -- Tokionighit colorscheme
 require("tokyonight").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
-   transparent = true, -- Enable this to disable setting the background color
+  transparent = true, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
   styles = {
     -- Style to be applied to different syntax groups
@@ -33,8 +32,5 @@ require("tokyonight").setup({
   on_highlights = function(highlights, colors) end,
 })
 
--- Noctic colorscheme
-
-
---setting the colorscheme
-vim.cmd[[colorscheme tokyonight]]
+--setting the colorscheme tokyonight or neosolarized
+vim.cmd [[colorscheme tokyonight]]
