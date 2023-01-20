@@ -18,6 +18,11 @@ return require('packer').startup(function(use)
   --Treesitter and autopairs
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'windwp/nvim-autopairs'
+
+  --Neovim colorazier
+  
+  use 'norcalli/nvim-colorizer.lua'
+
   --Lualine
   use {
     'nvim-lualine/lualine.nvim',
