@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   --Treesitter and autopairs
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 
   --Neovim colorazier
   
