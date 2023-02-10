@@ -33,4 +33,4 @@ require("tokyonight").setup({
 })
 
 --setting the colorscheme tokyonight or neosolarized
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme tokyonight-night]]
