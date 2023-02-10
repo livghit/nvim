@@ -170,6 +170,11 @@ _G.packer_plugins = {
     path = "/home/li/.local/share/nvim/site/pack/packer/start/nvim-terminal",
     url = "https://github.com/s1n7ax/nvim-terminal"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/li/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/li/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
