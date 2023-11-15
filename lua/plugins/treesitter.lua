@@ -4,6 +4,10 @@ return {
     opts = {
       ensure_installed = {
         "astro",
+        "c_sharp",
+        "json5",
+        "typescript",
+        "javascript",
         "go",
         "cmake",
         "sql",
