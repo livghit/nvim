@@ -1,4 +1,29 @@
 return {
+	--noice nvim
+	{
+		"folke/noice.nvim",
+		opts = function(_, opts)
+			table.insert(opts.routes, {
+				filter = {
+					any = {
+						{ event = "notify", find = "No information available" },
+						{ event = "notify", find = "# Plugin Updates" },
+						{ event = "notify", find = "# Config Change Detected." },
+					},
+				},
+				opts = { skip = true },
+			})
+			opts.presets.lsp_doc_border = true
+			opts.presets.bottom_search = true
+			opts.presets.command_palette = false
+		end,
+	},
+	{
+		"rcarriga/nvim-notify",
+		opts = {
+			timeout = 10000,
+		},
+	},
 	--statusline
 	{
 		"nvim-lualine/lualine.nvim",
