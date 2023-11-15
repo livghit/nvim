@@ -4,3 +4,7 @@
 
 local keymaps = vim.keymap
 local opts = { noremap = true, silent = true }
+
+-- BufferLineCycling
+keymaps.set("n", "<tab>", ":BufferLineCycleNext<Return>", opts)
+keymaps.set("n", "<s-tab>", ":BufferLineCyclePrev<Return>", opts)
