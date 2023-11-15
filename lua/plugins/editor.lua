@@ -1,4 +1,15 @@
 return {
+  --neotree enable hidden files
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+        },
+      },
+    },
+  },
   -- flash
   { "folke/flash.nvim", enable = false },
 
