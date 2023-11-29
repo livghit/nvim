@@ -1,4 +1,5 @@
-return {
+--[[
+-return {
 	"craftzdog/solarized-osaka.nvim",
 	lazy = true,
 	priority = 1000,
@@ -12,4 +13,14 @@ return {
 			lualine_bold = true,
 		}
 	end,
+}-
+--]]
+
+return {
+	"folke/tokyonight.nvim",
+	lazy = false,
+	priority = 1000,
+	opts = {
+		transparent = true,
+	},
 }
