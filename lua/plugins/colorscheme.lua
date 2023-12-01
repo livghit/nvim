@@ -17,8 +17,9 @@
 --]]
 
 return {
-	"folke/tokyonight.nvim",
+	"rose-pine/neovim",
 	lazy = false,
+	name = "rosepine",
 	priority = 1000,
 	opts = {
 		transparent = true,
