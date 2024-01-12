@@ -68,4 +68,6 @@ return {
 			opts.config.header = vim.split(logo, "\n")
 		end,
 	},
+
+	{ "MunifTanjim/nui.nvim", lazy = true },
 }

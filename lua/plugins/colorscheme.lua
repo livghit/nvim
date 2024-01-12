@@ -1,41 +1,6 @@
---[[
--return {
-	"craftzdog/solarized-osaka.nvim",
-	lazy = true,
-	priority = 1000,
-	opts = function()
-		return {
-			transparent = true,
-			terminal_colors = true,
-			styles = {
-				sidebars = "transparent",
-			},
-			lualine_bold = true,
-		}
-	end,
-}-
---]]
-
+--rosepine config for lazyvim
 return {
-	--[[
-  --
-	"rose-pine/neovim",
-	lazy = false,
-	name = "rosepine",
+	"catppuccin/nvim",
+	name = "catppuccin",
 	priority = 1000,
-	opts = {
-		transparent = true,
-	},
-
-  --]]
-	--
-
-	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {
-			transparent = false,
-		},
-	},
 }

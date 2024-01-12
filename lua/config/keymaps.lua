@@ -8,3 +8,5 @@ local opts = { noremap = true, silent = true }
 -- BufferLineCycling
 keymaps.set("n", "<tab>", ":BufferLineCycleNext<Return>", opts)
 keymaps.set("n", "<s-tab>", ":BufferLineCyclePrev<Return>", opts)
+-- lazyvim keymap for commenting a line
+keymaps.set("n", "<leader>/", ":CommentToggle<Return>", opts)
