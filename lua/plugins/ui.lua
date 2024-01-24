@@ -1,4 +1,5 @@
 return {
+	{ "nvim-tree/nvim-web-devicons", lazy = true },
 	--noice nvim
 	{
 		"folke/noice.nvim",
@@ -30,7 +31,7 @@ return {
 		event = "VeryLazy",
 		opts = {
 			options = {
-				theme = "solarized_dark",
+				theme = "catppuccin",
 			},
 		},
 	},

@@ -15,7 +15,7 @@ require("lazy").setup({
 			opts = {
 				--colorscheme = "tokyonight-storm",
 				--colorscheme = "rose-pine-moon",
-				colorscheme = "catppuccin-macchiato",
+				--colorscheme = "catppuccin",
 			},
 		},
 		-- import any extras modules here

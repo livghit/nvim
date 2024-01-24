@@ -1,9 +1,15 @@
 --rosepine config for lazyvim
 return {
-	"catppuccin/nvim",
-	name = "catppuccin",
-	opts = {
-		transparent = false,
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
 	},
-	priority = 1000,
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "catppuccin-mocha",
+			transparent = true,
+		},
+	},
 }
