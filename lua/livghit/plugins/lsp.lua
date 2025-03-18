@@ -160,6 +160,7 @@ return {
       ts_ls = {},
       gopls = {},
       elixirls = {},
+      tailwindcss = {},
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
