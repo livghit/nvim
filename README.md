@@ -1,3 +1,4 @@
+# Custom Config
 # kickstart.nvim
 
 ## Introduction
