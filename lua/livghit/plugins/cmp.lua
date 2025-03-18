@@ -1,3 +1,14 @@
+-- Get colors from the current colorscheme
+local function get_hl_color(name, fallback)
+  local hl = vim.api.nvim_get_hl(0, { name = name, link = false })
+  return hl and hl.fg or fallback
+end
+
+vim.api.nvim_set_hl(0, 'CmpBorder', { fg = get_hl_color('FloatBorder', '#c5a3ff'), bg = 'NONE' })
+vim.api.nvim_set_hl(0, 'Pmenu', { bg = get_hl_color('Pmenu', '#f8e8ff'), fg = get_hl_color('Normal', '#4a4a4a') })
+vim.api.nvim_set_hl(0, 'PmenuSel', { bg = get_hl_color('PmenuSel', '#d1b3ff'), fg = '#000000' })
+vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = get_hl_color('PmenuThumb', '#b080ff') })
+
 return { -- Autocompletion
   'hrsh7th/nvim-cmp',
   event = 'InsertEnter',
@@ -42,6 +53,16 @@ return { -- Autocompletion
     luasnip.config.setup {}
 
     cmp.setup {
+      window = {
+        completion = {
+          border = 'rounded',
+          winhighlight = 'Normal:Pmenu,FloatBorder:CmpBorder,Search:None',
+        },
+        documentation = {
+          border = 'rounded',
+          winhighlight = 'Normal:Pmenu,FloatBorder:CmpBorder,Search:None',
+        },
+      },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
