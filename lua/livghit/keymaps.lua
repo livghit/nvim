@@ -18,3 +18,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = 'Toggle neotree' })
 vim.keymap.set('n', '<leader>q', ':bd<CR>', { desc = 'Drop a buffer' })
+
+vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { desc = 'Go to next buffer' })
+vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { desc = 'Go to previous buffer' })
