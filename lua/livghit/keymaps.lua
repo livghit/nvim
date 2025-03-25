@@ -21,3 +21,13 @@ vim.keymap.set('n', '<leader>q', ':bd<CR>', { desc = 'Drop a buffer' })
 
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', { desc = 'Go to next buffer' })
 vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { desc = 'Go to previous buffer' })
+
+-- Toggle Dark mode and light mode
+
+vim.keymap.set('n', '<leader>tdm', function()
+  vim.cmd.colorscheme 'github_dark_default'
+end, { desc = 'Toggle github dark defualt theme' })
+
+vim.keymap.set('n', '<leader>tlm', function()
+  vim.cmd.colorscheme 'github_light'
+end, { desc = 'Toggle github light theme' })
