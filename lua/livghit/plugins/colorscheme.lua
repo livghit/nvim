@@ -33,7 +33,7 @@ return {
       if is_dark_mode() then
         vim.cmd.colorscheme 'github_dark_dimmed'
       else
-        vim.cmd.colorscheme 'github_light'
+        vim.cmd.colorscheme 'tokyonight-storm'
       end
     end,
   },
