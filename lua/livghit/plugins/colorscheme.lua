@@ -31,9 +31,9 @@ return {
     priority = 1000,
     config = function()
       if is_dark_mode() then
-        vim.cmd.colorscheme 'github_dark_dimmed'
+        --vim.cmd.colorscheme 'github_dark'
       else
-        vim.cmd.colorscheme 'tokyonight-storm'
+        --vim.cmd.colorscheme 'github_dark'
       end
     end,
   },
@@ -42,12 +42,13 @@ return {
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function() ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
+        transparent = true,
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
       }
 
-      -- vim.cmd.colorscheme 'tokyonight-storm'
+      vim.cmd.colorscheme 'tokyonight-storm'
     end,
   },
 }
